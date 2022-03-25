@@ -210,8 +210,8 @@ class Chef
 
       property :rubygems_url, [String, Array],
         description: "The location to source rubygems. It can be set to a string or array of strings for URIs to set as rubygems sources. This allows individuals to setup an internal mirror of rubygems for “airgapped” environments.",
-        default: "",
-        introduced: "17.11"
+        default: '',
+        introduced: '17.11'
 
       property :exception_handlers, Array,
         description: %q(An array of hashes that contain a exception handler class and the arguments to pass to that class on initialization. The hash should include `class` and `argument` keys where `class` is a String and `argument` is an array of quoted String values. For example: `[{'class' => 'MyHandler', %w('"argument1"', '"argument2"')}]`),
